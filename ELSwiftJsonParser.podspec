@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ELSwiftJsonParser"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "A light-weight tool helps to transfrom Json dictionary into model as well as transfrom model into Json dictionary."
   s.description  = <<-DESC
   A light-weight tool helps to transfrom Json dictionary into model as well as transfrom model into Json dictionary.
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE.md' }
   s.author             = { "Hanping Xu" => "stellanxu@gmail.com" }
   s.social_media_url   = "https://github.com/Elenionl"
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/Elenionl/ELSwiftJsonParser.git", :tag => "#{s.version}" }
   s.source_files  = "ELSwiftJsonParser/*"
   s.requires_arc = true
