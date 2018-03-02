@@ -6,7 +6,7 @@ README.md.svg?branch=master)](https://travis-ci.org/Elenionl/ELSwiftJsonParser)
 [![Downloads](https://img.shields.io/cocoapods/dt/ELSwiftJsonParser.svg?label=Total%20Downloads&colorB=28B9FE)](http://cocoapods.org/pods/ELSwiftJsonParser)
 [![CocoaPods](https://img.shields.io/cocoapods/v/ELSwiftJsonParser.svg?style=flat)](https://cocoapods.org/pods/ELSwiftJsonParser)
 [![CocoaPods](https://img.shields.io/cocoapods/l/ELSwiftJsonParser.svg?style=flat)](https://cocoapods.org/pods/ELSwiftJsonParser)
-[![iOS 9.0](https://img.shields.io/badge/iOS-7.0-blue.svg)](https://github.com/Elenionl/ELSwiftJsonParser)
+[![iOS 9.0](https://img.shields.io/badge/iOS-8.0-blue.svg)](https://github.com/Elenionl/ELSwiftJsonParser)
 
 
 A light-weight but effective tool for converting between Json Dictionary and Swift object.
@@ -123,7 +123,7 @@ extension AnObject: JsonDictionaryEncodable {
 
 ## Requirements
 
-* iOS 7.0+
+* iOS 8.0+
 * ARC
 
 ## Author

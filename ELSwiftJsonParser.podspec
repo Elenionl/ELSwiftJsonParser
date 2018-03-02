@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.source_files  = "ELSwiftJsonParser/*"
   s.requires_arc = true
   s.frameworks = 'Foundation'
+  s.swift_version = 4.0
 end
 # pod spec lint ELSwiftJsonParser.podspec
 # pod trunk push ELSwiftJsonParser.podspec
