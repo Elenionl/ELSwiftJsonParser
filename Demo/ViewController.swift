@@ -63,15 +63,25 @@ class AnObject: NSObject, JsonDictionaryDecodable {
     
     required init(from dictionary: [String : Any]) {
         super.init()
+        // String
         string = dictionary.string("string")
+        // Int
         int = dictionary.int("int")
+        // Bool
         bool = dictionary.bool("boolValue")
+        // Double
         double = dictionary.double("double")
+        // Date
         date = dictionary.date("dateString")
+        // Purse object from Dictionary
         object = dictionary.object("object", type: AnObject.self)
+        // Purse array of object from array of Dictionary
         objectArray = dictionary.objectArray("objectArray", type: AnObject.self)
+        // Array of string
         arrayOfString = dictionary.array("arrayOfString", type: String.self)
+        // Purse Enum from Int
         aType = AType.from(int: dictionary.int("aType") ?? -1)
+        // Purse as specified
         randomlyParse = dictionary.array("anyDictionaryArray", type: [String: Any].self).first?.dictionary("anyInnerDictionary")?.string("randomParse")
     }
     
