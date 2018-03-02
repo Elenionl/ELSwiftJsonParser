@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ELSwiftJsonParser"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A light-weight tool helps to transfrom Json dictionary into model as well as transfrom model into Json dictionary."
   s.description  = <<-DESC
   A light-weight tool helps to transfrom Json dictionary into model as well as transfrom model into Json dictionary.
