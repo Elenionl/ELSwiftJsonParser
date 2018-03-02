@@ -121,11 +121,6 @@ extension AnObject: JsonDictionaryEncodable {
 }
 ```
 
-## Requirements
-
-* iOS 8.0+
-* ARC
-
 ## Author
 
 @Elenionl, stallanxu@gmail.com
