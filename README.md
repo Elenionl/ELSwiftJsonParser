@@ -1,7 +1,5 @@
 # ELSwiftJsonParser
 
-[![Build Status](https://travis-ci.org/Elenionl/LICENSE.md
-README.md.svg?branch=master)](https://travis-ci.org/Elenionl/ELSwiftJsonParser)
 [![Apps Using](https://img.shields.io/cocoapods/at/ELSwiftJsonParser.svg?label=Apps%20Using%20ELSwiftJsonParser&colorB=28B9FE)](http://cocoapods.org/pods/ELSwiftJsonParser)
 [![Downloads](https://img.shields.io/cocoapods/dt/ELSwiftJsonParser.svg?label=Total%20Downloads&colorB=28B9FE)](http://cocoapods.org/pods/ELSwiftJsonParser)
 [![CocoaPods](https://img.shields.io/cocoapods/v/ELSwiftJsonParser.svg?style=flat)](https://cocoapods.org/pods/ELSwiftJsonParser)
