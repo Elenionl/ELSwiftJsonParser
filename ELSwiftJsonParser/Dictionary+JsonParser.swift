@@ -9,25 +9,25 @@
 import Foundation
 
 /// Convert model from dictionary
-protocol JsonDictionaryDecodable {
+public protocol JsonDictionaryDecodable {
     init(from dictionary: [String: Any])
     init()
 }
 
 /// Convert model to dictionary
-protocol JsonDictionaryEncodable {
+public protocol JsonDictionaryEncodable {
     /// Creating dictionary from model
     ///
     /// - Returns: dictionary
     func toDictionary() -> [String: Any]
 }
 
-extension Dictionary where Key == String, Value == Any {
+public extension Dictionary where Key == String, Value == Any {
     /// Get String object from dictionary
     ///
     /// - Parameter key: The key of object
     /// - Returns: String
-    func string(_ key: String) -> String? {
+    public func string(_ key: String) -> String? {
         let object = self[key]
         if object == nil {
             return nil
@@ -45,7 +45,7 @@ extension Dictionary where Key == String, Value == Any {
     ///
     /// - Parameter key: The key of object
     /// - Returns: String
-    func int(_ key: String) -> Int? {
+    public func int(_ key: String) -> Int? {
         let object = self[key]
         if object == nil {
             return nil
@@ -72,7 +72,7 @@ extension Dictionary where Key == String, Value == Any {
     ///
     /// - Parameter key: The key of object
     /// - Returns: String
-    func double(_ key: String) -> Double? {
+    public func double(_ key: String) -> Double? {
         let object = self[key]
         if object == nil {
             return nil
@@ -99,7 +99,7 @@ extension Dictionary where Key == String, Value == Any {
     ///
     /// - Parameter key: The key of object
     /// - Returns: String
-    func bool(_ key: String) -> Bool? {
+    public func bool(_ key: String) -> Bool? {
         let object = self[key]
         if object == nil {
             return nil
@@ -128,7 +128,7 @@ extension Dictionary where Key == String, Value == Any {
     ///   - key: The key of object
     ///   - type: The type which object will be convert to
     /// - Returns: The object
-    func object<T>(_ key: String, type: T.Type) -> T? where T: JsonDictionaryDecodable {
+    public func object<T>(_ key: String, type: T.Type) -> T? where T: JsonDictionaryDecodable {
         let object = self[key]
         if object == nil {
             return nil
@@ -145,7 +145,7 @@ extension Dictionary where Key == String, Value == Any {
     ///   - key: The key of array
     ///   - type: The type which object will be convert to
     /// - Returns: An array of type object
-    func objectArray<T>(_ key: String, type: T.Type) -> [T] where T: JsonDictionaryDecodable {
+    public func objectArray<T>(_ key: String, type: T.Type) -> [T] where T: JsonDictionaryDecodable {
         let object = self[key]
         if object == nil {
             return []
@@ -164,7 +164,7 @@ extension Dictionary where Key == String, Value == Any {
     ///   - key: The key of array
     ///   - type: The type of object
     /// - Returns: An array of type object
-    func array<T>(_ key: String, type: T.Type) -> [T] {
+    public func array<T>(_ key: String, type: T.Type) -> [T] {
         let object = self[key]
         if object == nil {
             return []
@@ -175,14 +175,14 @@ extension Dictionary where Key == String, Value == Any {
         return []
     }
     
-    func date(_ key: String) -> Date? {
+    public func date(_ key: String) -> Date? {
         guard let dateTime = self[key] as? Int else {
             return nil
         }
         return Date(timeIntervalSince1970: Double(dateTime/1000))
     }
     
-    func dictionary(_ key: String) -> [String: Any]? {
+    public func dictionary(_ key: String) -> [String: Any]? {
         guard let dictionary = self[key] as? Dictionary else {
             return nil
         }
